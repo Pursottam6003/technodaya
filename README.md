@@ -8,9 +8,9 @@
 > **Note:** This project (Technodaya Website) is now being maintained here
 
 <details>
-  <summary>Made with ❤️ by Team4One, maintained by me</summary>
+  <summary>Made with ❤️ by Team4One, maintained by <a href="https://github.com/tripathics">tripathics</a></summary>
   <ul>
-    <li>Me</li>
+    <li><a href="https://github.com/tripathics">tripathics</a></li>
     <li><a href="https://github.com/pursottam6003">pursottam6003</a></li>
     <li><a href="https://github.com/daknya">daknya</a></li>
   </ul>
