@@ -14,3 +14,5 @@
     <li><a href="https://github.com/daknya">daknya</a></li>
   </ul>
 </details>
+
+> **Designathon 2.0:** To learn how to make open source contributions for Designathon 2.0, visit the [wiki section](https://github.com/Pursottam6003/technodaya/wiki).
