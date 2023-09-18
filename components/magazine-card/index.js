@@ -21,7 +21,9 @@ const MagazineCard = ({ imgsrc, title, vol, iss, month, year, link, pdfLink }) =
           ) : (
             <a className={styles["action-btn"]} href={link} target="_blank" rel='noreferrer'>Read issue</a>
           )}
-          <button className={styles["action-btn"]}>Share</button>
+         <a href="https://twitter.com/login  " target="_blank">
+          <button className={styles["action-btn"]} >Share</button>
+          </a>
         </div>
       </div>
     </section>

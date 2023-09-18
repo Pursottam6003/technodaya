@@ -1,6 +1,11 @@
+// import style from './spin.css';
+
 export default function SpinnerIcon() {
   return (
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+
+
+  
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"  className='cetre1' >
       <g>
         <path d="M12,2 a1,1 0 0 1 1,1 v3 a1,1 0 0 1 -1,1 a1,1 0 0 1 -1,-1 v-3 a1,1 0 0 1 1,-1 z" />
         <path style={{ opacity: .918 }} transform="rotate(330,12,12)" d="M12,2 a1,1 0 0 1 1,1 v3 a1,1 0 0 1 -1,1 a1,1 0 0 1 -1,-1 v-3 a1,1 0 0 1 1,-1 z" />
@@ -23,5 +28,6 @@ export default function SpinnerIcon() {
           values="0 12 12; 30 12 12; 60 12 12; 90 12 12; 120 12 12; 150 12 12; 180 12 12; 210 12 12; 240 12 12; 270 12 12; 300 12 12; 330 12 12" />
       </g>
     </svg>
+   
   )
 }

@@ -34,9 +34,9 @@ const Home = () => (
         <h4 className={cormorant.className}>Stay updated with new Issues of Technodaya!</h4>
         <form>
           <div className={styles.inputs}>
-            <input required type="text" placeholder="First Name" />
-            <input required type="text" placeholder="Last Name" />
-            <input required type="email" placeholder="Email" />
+            <input required type="text" placeholder="First Name"  pattern="[A-Za-z]+"  />
+            <input  type="text" placeholder="Last Name" pattern="[A-Za-z]+"/>
+            <input required type="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
           </div>
           <button type="submit" className={styles.submit}>
             <div className={styles.circle}>

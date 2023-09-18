@@ -25,7 +25,7 @@ const FormFC = ({
 
   const categoriesSelect = Categories.map((category, i) => {
     if (i === 0) {
-      return <option key={i} value={i}>Select an activity category</option>
+      return <option key={i} value={i}>select An Activity</option>
     } else {
       return <option key={i} value={i}>{category}</option>
     }

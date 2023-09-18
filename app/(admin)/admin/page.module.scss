@@ -41,6 +41,8 @@
     height: 1.8rem;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+
 }
 
 .btn {
@@ -253,4 +255,14 @@
         user-select: none;
         white-space: nowrap;
     }
+}
+
+
+
+.test{
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    display: flex;
+    flex-direction: row;
 }
