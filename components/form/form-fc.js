@@ -59,6 +59,10 @@ const FormFC = ({
           >
             {categoriesSelect}
           </select>
+          {
+            parseInt(category) !=0 && 
+            <a className={cx(styles['select-icon'])} onClick={()=>setCategory(0)}></a>
+          }
         </div>
       </div>
 
