@@ -21,8 +21,9 @@ const Categories = [
   'Outreach Activity',
   'Announcement',
   'Awards',
+  //others
 ]
-
+Categories.sort();
 const CategoryTitles = [
   '',
   'Memorandum of Understanding (MoU)',
