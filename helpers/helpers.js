@@ -22,7 +22,8 @@ const Categories = [
   'Announcement',
   'Awards',
   // 'Other'
-]
+].sort();
+
 
 const CategoryTitles = [
   '',
@@ -45,7 +46,8 @@ const CategoryTitles = [
   'Announcement',
   'Awards',
   // ''
-]
+].sort();
+
 
 const Sections = {
   'default': { id: 'default', title: 'All Activities', taskIds: [], categories: [] },
