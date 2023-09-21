@@ -4,6 +4,14 @@ import { Categories } from '../../helpers/helpers'
 import styles from './Form.module.scss'
 import cx from 'classnames'
 
+const sortedcatogries = Categories.slice().sort();
+
+function originalPosition(pos) {
+  const element = sortedcatogries[pos];
+  const index = Categories.indexOf(element);
+  return index;
+}
+
 const FormFC = ({
   category, setCategory,
   activityTitle, setActivityTitle,
@@ -23,11 +31,11 @@ const FormFC = ({
     }
   }
 
-  const categoriesSelect = Categories.map((category, i) => {
+  const categoriesSelect = sortedcatogries.map((category, i) => {
     if (i === 0) {
-      return <option key={i} value={i}>Select an activity category</option>
+      return <option key={i} value={originalPosition(i)}>Select an activity category</option>
     } else {
-      return <option key={i} value={i}>{category}</option>
+      return <option key={i} value={originalPosition(i)}>{category}</option>
     }
   })
 
