@@ -25,7 +25,7 @@ const FormFC = ({
 
   const categoriesSelect = Categories.map((category, i) => {
     if (i === 0) {
-      return <option key={i} value={i}>Select an activity category</option>
+      return <option key={i} value={i} hidden>Select an activity category</option>
     } else {
       return <option key={i} value={i}>{category}</option>
     }
@@ -59,6 +59,10 @@ const FormFC = ({
           >
             {categoriesSelect}
           </select>
+          {
+            parseInt(category) !=0 && 
+            <a className={cx(styles['select-icon'])} onClick={()=>setCategory(0)}></a>
+          }
         </div>
       </div>
 

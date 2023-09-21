@@ -21,7 +21,6 @@ const Categories = [
   'Outreach Activity',
   'Announcement',
   'Awards',
-  // 'Other'
 ]
 
 const CategoryTitles = [
