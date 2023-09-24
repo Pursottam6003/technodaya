@@ -169,7 +169,7 @@ export default function Submissions() {
       <main className={cx("workspace", styles.container)}>
         {errorApproved || errorPending ? (
           <div className="error">{errorApproved || errorPending}</div>
-        ) : fetchingPending || fetchingApproved? <LoadingPage /> : (
+        ) : fetchingPending || fetchingApproved ? <LoadingPage /> : (
           <div className="submissions-wrapper">
             <div className="submission pending">
               <SubmissionSection type='pending'
