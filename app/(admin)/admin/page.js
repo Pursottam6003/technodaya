@@ -6,7 +6,7 @@ import { arrayRemove } from "firebase/firestore"
 import SpinnerIcon from "@/components/icons/spinner-icon"
 import { where, orderBy, setDoc, doc, deleteDoc } from 'firebase/firestore'
 import useFetchCollection from "@/hooks/fetchCollection"
-import LoadingPage from "@/components/icons/spinner-icon"
+import LoadingPage from "@/components/loading-screen"
 import { deleteFileFromStorage } from "@/helpers/helpers"
 import cx from "classnames"
 import styles from './page.module.scss'
@@ -169,7 +169,7 @@ export default function Submissions() {
       <main className={cx("workspace", styles.container)}>
         {errorApproved || errorPending ? (
           <div className="error">{errorApproved || errorPending}</div>
-        ) : fetchingPending || fetchingApproved ? <LoadingPage /> : (
+        ) : fetchingPending || fetchingApproved? <LoadingPage /> : (
           <div className="submissions-wrapper">
             <div className="submission pending">
               <SubmissionSection type='pending'
